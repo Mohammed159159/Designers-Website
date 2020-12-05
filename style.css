@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Monoton&display=swap");
+* {
+  margin: auto;
+  padding: auto;
+  box-sizing: content-box;
+  font-family: "Lato";
+
+}
+
+/*start nav bar*/
+nav {
+  overflow: hidden;
+  background-color: white;
+  height: 75px;
+  width: 100%;
+  color: #516d85;
+  padding-top: 1%;
+
+}
+
+nav h1 {
+  padding-left: 150px;
+  float: left;
+  font-family: "Monoton";
+  font-size: 2.5em;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav ul li a {
+  box-sizing: border-box;
+  padding: 20px 30px;
+  padding-bottom: 10vh;
+  float: left;
+  color: #516d85;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #516d85;
+  color: white;
+}
+
+nav i {
+  position: absolute;
+  right: 15%;
+  margin: 2% 0%;
+  cursor: pointer;
+}
+
+/*end nav bar*/
+
+/*start header*/
+header {
+  width: 100%;
+  height: 55vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://scontent.fcai16-1.fna.fbcdn.net/v/t1.0-9/127216875_2880118585557403_8688807304586851135_n.jpg?_nc_cat=107&ccb=2&_nc_sid=b9115d&_nc_ohc=EAlEqjGSMTwAX-tA4m2&_nc_ht=scontent.fcai16-1.fna&oh=8e7bab8ae5da041b0bf213aeb9fc0ad7&oe=5FF0CF59");
+}
+
+.header-content {
+  background-color: #4a637f96;
+  width: 100%;
+  height: 55vh;
+  color: white;
+  font-family: "Lato";
+  text-align: center;
+  font-size: x-large;
+}
+
+.header-content h1 {
+  padding-top: 20vh;
+}
+
+.header-content p {
+  padding: 2vh 0px;
+  font-size: 0.6em;
+  width: 50%;
+  color: whitesmoke;
+}
+
+.header-content a {
+  font-size: 0.55em;
+  font-weight: 500;
+  padding: 1% 3%;
+  background-color: #01bb9c;
+  text-decoration: none;
+  color: white;
+}
+
+.header-content a:hover {
+  background-color: #60ac9f;
+}
+/*end header*/
+
+/*start info section*/
+.info{
+    padding: 100px 0px;
+    text-align: center;
+    font-size: large;
+    width: 600px;
+    color: #516d85;
+}
+
+.info h1{
+    padding-bottom: 20px;
+}
+
+.info p{
+    line-height: 30px;
+}
+/*end info section*/
+
+/*start promises section*/
+.promises{
+    width: 90%;
+    text-align: center;
+    height: 40vh;
+    position: relative;
+}
+
+.promise{
+    padding: 20px;
+    width: 28%;
+    text-align: left;
+    display: inline-block;
+    position: relative;
+}
+
+
+
+.promise-text{
+    width: 90%;
+    color: #7991a5;
+    
+}
+
+.promise-text h3{
+    padding: 10px 0px;
+    color: #5d6979;
+
+}
+.promise i{
+    position: absolute;
+    left: -35px;
+    color: #82F3DF;
+}
+
+/*end promises section*/
+
+/*responsive*/
+@media (max-width: 1293px) {
+  nav i {
+    right: 50px;
+  }
+}
+
+@media (max-width: 1054px){
+
+    nav{
+        overflow: auto;
+        height: fit-content;
+        padding-left: 0%;
+    }
+    nav h1{
+        padding-left: 30px;
+        display: block;
+        float: left;
+    }
+
+    .clear{
+        clear: both;
+    }
+
+    nav ul li a{
+        float: none;
+        display: block;
+    }
+    nav ul li{
+        display: block;
+    }
+
+    nav i {
+        position: static;
+        float: right;
+        padding-right: 10px;
+      }
+    header, .header-content{
+        height: 80vh;
+    }
+
+    .promise{
+        width: 100%;
+    }
+
+    .promise i{
+        left: -15px;
+    }
+
+}
